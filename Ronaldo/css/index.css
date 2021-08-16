@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.mainsec
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+}
+.mainsec::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff2562;
+    clip-path: polygon(54% 0, 100% 0, 100% 100%, 84% 100%);
+    animation: face-in 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+
+}
+.mainsec .content
+{
+    position: relative;
+    padding: 50px 50px 100px 150px;
+    box-sizing: border-box;
+    width: 1000px;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+.mainsec .content h2
+{
+    color: #fff;
+    font-weight: 800;
+    font-size: 3em;
+}
+.mainsec .content p
+{
+    color: #fff;
+    font-size: 1.2em;
+}
+.mainsec .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #ff2562;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.mainsec .content a:hover
+{
+    background-color: #cf1449;
+}
+.mainsec .imageBx
+{
+    position: relative;
+    padding-right: 100px;
+    animation: face-in 0.5s ease-in forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.mainsec .imageBx img
+{
+    max-width: 500px;
+}
+.mainsec .sci
+{
+    position: absolute;
+    left: 150px;
+    bottom: 75px;
+    display: flex;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.mainsec .sci li
+{
+    list-style: none;
+}
+.mainsec .sci li a
+{
+    text-decoration: none;
+    color: rgb(170, 169, 169);
+    margin-right: 40px;
+    font-size: 0.9em;
+}
+.mainsec .sci li a:hover
+{
+    color: #fff;
+}
+
+.mainsec .navbar
+{
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    display: flex;
+    border-left: 5px solid #ff2562;
+    padding-left: 30px;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0s;
+    opacity: 0;
+}
+.mainsec .navbar li
+{
+    list-style: none;
+}
+.mainsec .navbar li a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
+    font-size: 0.9em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.mainsec .navbar li a:hover
+{
+    color: #ff2562;
+}
+
+@keyframes face-in
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes left-in
+{
+    0%
+    {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@media (max-width : 1101px)
+{
+    .mainsec .navbar {
+        position: absolute;
+        left: 60px;
+        top: 50px;
+        display: flex;
+        border-left: 5px solid #ff2562;
+        padding-left: 30px;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 0s;
+        opacity: 0;
+    }
+    .mainsec .navbar li a 
+    {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 50px;
+        font-size: 0.7em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .mainsec .content 
+    {
+        position: relative;
+        padding: 10px 40px 100px 60px;
+        box-sizing: border-box;
+        width: 1000px;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+    .mainsec .content p 
+    {
+        color: #fff;
+        font-size: 1.1em;
+    }
+    .mainsec .content a 
+    {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 15px;
+        background-color: #ff2562;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 0.7em;
+        letter-spacing: 3px;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+    .mainsec .imageBx 
+    {
+        position: relative;
+        padding-right: 50px;
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    .mainsec .imageBx img 
+    {
+        max-width: 400px;
+    }
+    .mainsec .sci 
+    {
+        position: absolute;
+        left: 60px;
+        bottom: 75px;
+        display: flex;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    .mainsec .sci li a 
+    {
+        text-decoration: none;
+        color: rgb(170, 169, 169);
+        margin-right: 40px;
+        font-size: 0.7em;
+    }
+    .mainsec::before 
+    {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff2562;
+        clip-path: polygon(58% 0, 100% 0, 100% 100%, 84% 100%);
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+}
+
+@media (max-width : 951px)
+{
+    .mainsec .content h2 
+    {
+        color: #fff;
+        font-weight: 800;
+        font-size: 2.4em;
+    }
+    .mainsec .content p 
+    {
+        color: #fff;
+        font-size: 0.95em;
+    }
+    .mainsec .content a 
+    {
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-top: 15px;
+        background-color: #ff2562;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 0.6em;
+        letter-spacing: 3px;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+    .mainsec .imageBx img 
+    {
+        max-width: 370px;
+    }
+    .mainsec::before 
+    {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff2562;
+        clip-path: polygon(53% 0, 100% 0, 100% 100%, 88% 100%);
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+}
+
+@media (max-width : 800px)
+{
+    .mainsec
+    {
+        min-height: 90vh;
+    }
+    .mainsec::before 
+    {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ff2562;
+        clip-path: polygon(63% 0, 100% 0, 100% 100%, 93% 100%);
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+    }
+    .mainsec .content h2 
+    {
+        color: #fff;
+        font-weight: 800;
+        font-size: 2em;
+    }
+    .mainsec .content p 
+    {
+        color: #fff;
+        font-size: 0.8em;
+    }
+    .mainsec .content a 
+    {
+        position: relative;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-top: 10px;
+        background-color: #ff2562;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 0.6em;
+        letter-spacing: 3px;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+    .mainsec .imageBx 
+    {
+        position: relative;
+        padding-right: 20px;
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    .mainsec .imageBx img 
+    {
+        max-width: 330px;
+    }
+}
+
+@media (max-width : 716px)
+{
+    .menuIcon
+    {
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        background: url('../images/menu.png');
+        filter: invert(1);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .menuIcon.active
+    {
+        background: url('../images/close.png');
+        filter: invert(1);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .mainsec .navbar 
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.9);
+        flex-direction: column;
+        z-index: 11;
+        padding: 50px;
+        border: none;
+    }
+    .mainsec .navbar li
+    {
+        margin-bottom: 20px;
+    }
+    .mainsec .navbar.active 
+    {
+        left: 0;
+    }
+
+}
+
+@media (max-width : 601px)
+{
+    .mainsec
+    {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .mainsec::before
+    {
+        clip-path: polygon(0% 0, 100% 0, 100% 10%, 0% 35%);
+    }
+    .mainsec .content 
+    {
+        position: relative;
+        padding: 10px 40px 100px 60px;
+        box-sizing: border-box;
+        width: 450px;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+    .mainsec .sci 
+    {
+        position: absolute;
+        left: 170px;
+        bottom: 47px;
+        display: flex;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    .mainsec .sci li a 
+    {
+        text-decoration: none;
+        color: rgb(170, 169, 169);
+        margin-right: 40px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width : 451px)
+{
+    /* .mainsec
+    {
+        min-height: 120vh;
+    } */
+    .mainsec .imageBx 
+    {
+        position: relative;
+        /* padding-right: 0px; */
+        animation: face-in 0.5s ease-in forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    .mainsec .imageBx img 
+    {
+        max-width: 265px;
+    }
+    .mainsec .content 
+    {
+        position: relative;
+        padding: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+        text-align: center;
+    }
+    .mainsec .content h2 
+    {
+        color: #fff;
+        font-weight: 800;
+        font-size: 2em;
+    }
+    .mainsec .sci 
+    {
+        position: absolute;
+        left: 60px;
+        bottom: 10px;
+        display: flex;
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    .mainsec .sci li a 
+    {
+        text-decoration: none;
+        color: rgb(170, 169, 169);
+        margin-right: 40px;
+        font-size: 0.7em;
+    }
+}
